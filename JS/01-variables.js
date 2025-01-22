@@ -26,3 +26,19 @@ document.write('<p class="parrafoDestacado">Esto es una prueba de document.write
 
 //ventanas emergentes
 alert('Hola Mundo')
+
+//solicitar a un usuario un nombre y mostrar un saludo 
+
+const nombreUsario = prompt('Ingrese su nombre');
+console.log(nombreUsario)
+
+document.write('<p>Bienvenido '+ nombreUsario +'</p>');
+
+//solicitar a un usuario un precio de un producto en dolares 
+const precioSolicitado = parseFloat(prompt('ingrese un valor en dolares'));
+console.log(precioSolicitado)
+
+//parseInt('50')numeros enteros
+//parseFloat('50.9')numeros decimales
+
+alert('el importe indicado corresponde a USD$'+(precioSolicitado + 2) );
