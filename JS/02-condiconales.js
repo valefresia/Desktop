@@ -10,8 +10,12 @@ if (codicion logica){
 
 let edad = parseInt(prompt('ingrese su edad'));
 
-if (edad >=18){
+if (edad >=18 && edad < 70){
     document.write('debe votar');
 }else{
-    document.write('no debe votar');
+    if((edad>=16 && edad<18) || edad >70 ){
+        document.write('es optativo votar');
+    }else{
+        document.write('no debe votar');
+    }
 }
